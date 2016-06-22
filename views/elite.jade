@@ -1,0 +1,86 @@
+html
+  head
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    link(rel='stylesheet', href='https://code.getmdl.io/1.1.3/material.indigo-pink.min.css')
+    link(rel='stylesheet', href='stylesheets/style.css')
+  body
+    #window
+      form#myform(action='#')
+        #cards
+          fieldset#contactform
+            #mycard
+              .demo-card-wide.mdl-card.mdl-shadow--2dp
+                .mdl-card__title
+                  h2.mdl-card__title-text Contact details
+                .mdl-card__supporting-text
+                  | First, tell us how to get in touch with you!
+                  #name
+                    .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                      input#first.mdl-textfield__input(type='text', required='')
+                      label.mdl-textfield__label(for='sample3') First Name
+                    .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                      input#last.mdl-textfield__input(type='text', required='')
+                      label.mdl-textfield__label(for='sample3') Last Name
+                  #contact
+                    #phone
+                      .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                        input#mobile.mdl-textfield__input(type='text', pattern='-?[0-9]*(\.[0-9]+)?', required='')
+                        label.mdl-textfield__label(for='sample2') Mobile Phone
+                        span.mdl-textfield__error Mobile must be a number!
+                    #email
+                      .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                        input#mail.mdl-textfield__input(type='email', pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$', required='')
+                        label.mdl-textfield__label(for='sample2') E-mail
+                        span.mdl-textfield__error Enter a valid email!
+              // FAB button with ripple
+              div
+                button#next.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored.next(disabled='')
+                  i.material-icons arrow_forward
+          fieldset#essayform
+            #mycard2
+              .demo-card-wide.mdl-card.mdl-shadow--2dp
+                .mdl-card__title
+                  h2.mdl-card__title-text Short essay
+                .mdl-card__supporting-text
+                  | We'd like to learn more about you!
+                  | You can talk about anything (hobbies, favorite drama etc.) and of course your motivation for applying.
+                  br
+                  |                 Writing in Korean is optional, but why not use this opportunity to show off your skills!
+                  form#essayform(action='#')
+                    #essay.mdl-textfield.mdl-js-textfield
+                      textarea#essaytext.mdl-textfield__input(type='text', rows='6')
+                      label.mdl-textfield__label(for='sample5') Start here (minimum of 50 words)...
+              // FAB button with ripple
+              div
+                button#nextessay.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored.next(disabled='')
+                  i.material-icons arrow_forward
+          fieldset#uploadform
+            #mycard3
+              .demo-card-wide.mdl-card.mdl-shadow--2dp
+                .mdl-card__title
+                  h2.mdl-card__title-text Resume upload (optional)
+                .mdl-card__supporting-text
+                  | Please upload your resume in a valid format if you have one handy. Otherwise don't sweat it for now. (You'll need one if you do get invited for an interview though)
+                #uploadelements
+                  #resume_upload_button
+                    label.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored(for='resume-upload')
+                      i.material-icons file_upload
+                      input#resume-upload.none(type='file')
+                  #file-input-text-div.mdl-textfield.mdl-js-textfield
+                    input#file_input_text.file_input_text.mdl-textfield__input(type='text', disabled='', readonly='')
+                    label.mdl-textfield__label(for='file_input_text')
+              // FAB button with ripple
+              div
+                button#nextfile.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored.next
+                  i.material-icons arrow_forward
+          fieldset
+            #mycard4
+              .succss.demo-card-wide.mdl-card.mdl-shadow--2dp
+                #successtext
+                  h4 Thank your for your application.   We'll be in touch!
+                #star
+                  #success.star.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored
+                    i.material-icons star
+    #status
+    script(defer='', src='https://code.getmdl.io/1.1.3/material.min.js')
+    script(src='javascripts/script.js')

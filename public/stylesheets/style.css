@@ -1,0 +1,196 @@
+
+
+
+.demo-card-wide.mdl-card {
+width: 600px;
+height: 300px;
+ //outline: limegreen 10px solid;
+// display: flex;
+}
+
+
+
+
+
+#window {
+  height: 600px;
+  width: 800px;
+//  outline: 2px solid limegreen;
+   overflow:hidden;
+
+}
+
+#cards {
+
+ display:flex;
+ flex-direction: row;
+ width: 2400px;
+ transition: all .4s;
+}
+
+
+#name {
+display:flex;
+margin-top: 10px;
+justify-content: left;
+
+}
+
+#contact{
+  display: flex;
+
+}
+
+
+.mdl-button {
+// outline: red solid 5px;
+margin-left: 10px ;
+
+}
+
+
+
+.demo-card-wide > .mdl-card__title {
+color: #fff;
+height: 64px;
+background-color:indigo;
+}
+
+.mdl-card__title-text {
+position: relative;
+top: 6px;
+
+}
+
+.demo-card-wide > .mdl-card__menu {
+color: #fff;
+}
+
+
+#mycard, #mycard2, #mycard3, #mycard4 {
+height: 600px;
+width:800px;
+display:flex;
+flex-direction: row;
+ //outline: red solid 2px;
+justify-content: center;
+align-items: center;
+
+}
+
+
+.next {
+position: relative;
+top: 95px;
+right: 38px;
+z-index:1;
+opacity: 1;
+
+
+}
+
+#next:disabled, #nextessay:disabled, #nextfile:disabled {
+  background-color: #dfdfdf;
+
+}
+
+
+#essay {
+  width: 100%;
+}
+
+
+
+
+#contactform {
+
+//  padding-bottom:100px;
+}
+
+.mdl-textfield {
+  margin-right: 10px;
+}
+
+
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-64, .mdl-button.mdl-64 {
+  font-size: 64px;
+}
+
+
+
+input[type="file"] {
+  display: none;
+}
+
+
+#file-input-text-div {
+  width: 250px;
+  margin-left: 20px;
+}
+
+
+
+#uploadelements {
+  display: flex;
+  //margin-top: 20px;
+  //height: 100%;
+  justify-content: center;
+  align-items: center;
+  //outline: pink 2px solid;
+
+}
+
+.star.mdl-button {
+  //outline: green 2px solid;
+  margin: 0px;
+  transition: all .4s .2s;
+
+}
+
+.star.focused.mdl-button {
+  transform: scale(3);
+}
+
+
+
+#star {
+  display: flex;
+  flex-direction: column;
+align-items: center;
+  //outline: red solid 2px;
+  justify-content: center;
+  margin: 2px;
+  height: 100%;
+
+}
+
+
+.success.mdl-card {
+  position: relative;
+}
+#successtext {
+
+  position: absolute;
+  padding-bottom: 10px;
+ top: -100px;
+left: 12%;
+transform: translate(-6%,0);
+  transition: all .4s .5s ease-in-out;
+  //outline: blue 2px solid;
+}
+
+
+
+@keyframes drop {
+  0%{top: 10px}
+  100%{top: 0px}
+}
+
+#successtext.focused {
+  top: 0px;
+}
