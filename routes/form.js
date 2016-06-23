@@ -1,9 +1,15 @@
 var express = require('express');
 var router = express.Router();
+var mongoose = require('mongoose');
+var Comment = mongoose.model('comments');
+
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.render('form', {title: 'my awesome form'});
+  Comment.find(function(err, comments) {
+    console.log(comments)
+  res.render('form', {title: 'my awesome form', comments: comments});
+    })
 });
 
 
@@ -11,8 +17,12 @@ router.get('/', function(req, res, next) {
 /* POST */
 
 router.post('/', function(req, res) {
-  console.log(req.body.comment);
-  res.redirect('form')
+  new Comment({title: req.body.comment})
+  .save(function(err, comment) {
+    console.log(req.body.comment);
+    res.redirect('form')
+  })
+
 });
 
 
