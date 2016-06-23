@@ -5,7 +5,7 @@ html
     link(rel='stylesheet', href='stylesheets/style.css')
   body
     #window
-      form#myform(action='#')
+      form#myform(action='post')
         #cards
           fieldset#contactform
             #mycard
@@ -16,11 +16,11 @@ html
                   | First, tell us how to get in touch with you!
                   #name
                     .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
-                      input#first.mdl-textfield__input(type='text', required='')
-                      label.mdl-textfield__label(for='sample3') First Name
+                      input#first.mdl-textfield__input(type='text', required='', name = 'firstName')
+                      label.mdl-textfield__label(for='firstName') First Name
                     .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
-                      input#last.mdl-textfield__input(type='text', required='')
-                      label.mdl-textfield__label(for='sample3') Last Name
+                      input#last.mdl-textfield__input(type='text', required='', name = 'lastName')
+                      label.mdl-textfield__label(for='lastName') Last Name
                   #contact
                     #phone
                       .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
