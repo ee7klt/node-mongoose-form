@@ -5,7 +5,7 @@ html
     link(rel='stylesheet', href='stylesheets/style.css')
   body
     #window
-      form#myform(method="post" action="")
+      form#myform(method="post", enctype="multipart/form-data", action="")
         #cards
           fieldset#contactform
             #mycard
@@ -63,7 +63,7 @@ html
                   | Please upload your resume in a valid format if you have one handy. Otherwise don't sweat it for now. (You'll need one if you do get invited for an interview though)
                 #uploadelements
                   #resume_upload_button
-                    label.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored(for='resume')
+                    label.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored(for='resume-upload')
                       i.material-icons file_upload
                       input#resume-upload.none(type='file', name='resume')
                   #file-input-text-div.mdl-textfield.mdl-js-textfield
