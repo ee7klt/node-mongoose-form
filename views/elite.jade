@@ -5,7 +5,7 @@ html
     link(rel='stylesheet', href='stylesheets/style.css')
   body
     #window
-      form#myform(action='post')
+      form#myform(method="post" action="")
         #cards
           fieldset#contactform
             #mycard
@@ -24,13 +24,13 @@ html
                   #contact
                     #phone
                       .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
-                        input#mobile.mdl-textfield__input(type='text', pattern='-?[0-9]*(\.[0-9]+)?', required='')
-                        label.mdl-textfield__label(for='sample2') Mobile Phone
+                        input#mobile.mdl-textfield__input(name='phone', type='text', pattern='-?[0-9]*(\.[0-9]+)?', required='')
+                        label.mdl-textfield__label(for='phone') Mobile Phone
                         span.mdl-textfield__error Mobile must be a number!
                     #email
                       .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
-                        input#mail.mdl-textfield__input(type='email', pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$', required='')
-                        label.mdl-textfield__label(for='sample2') E-mail
+                        input#mail.mdl-textfield__input(name='eMail', type='email', pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$', required='')
+                        label.mdl-textfield__label(for='eMail') E-mail
                         span.mdl-textfield__error Enter a valid email!
               // FAB button with ripple
               div
@@ -48,8 +48,8 @@ html
                   |                 Writing in Korean is optional, but why not use this opportunity to show off your skills!
                   form#essayform(action='#')
                     #essay.mdl-textfield.mdl-js-textfield
-                      textarea#essaytext.mdl-textfield__input(type='text', rows='6')
-                      label.mdl-textfield__label(for='sample5') Start here (minimum of 50 words)...
+                      textarea#essaytext.mdl-textfield__input(name='essay', type='text', rows='6')
+                      label.mdl-textfield__label(for='essay') Start here (minimum of 50 words)...
               // FAB button with ripple
               div
                 button#nextessay.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored.next(disabled='')

@@ -19,14 +19,16 @@ var successText = document.getElementById('successtext');
 //var msg = document.getElementById('status');
 
 
-nextContact.addEventListener('click',function() {
+nextContact.addEventListener('click',function(e) {
+  e.preventDefault();
   window.console.log('nextContact button clicked');
   cards.style.transform ='translateX('+-800+'px)';
 
 
 });
 
-nextEssay.addEventListener('click',function() {
+nextEssay.addEventListener('click',function(e) {
+  e.preventDefault();
   window.console.log('nextEssay button clicked');
   cards.style.transform ='translateX('+-800*2+'px)';
 

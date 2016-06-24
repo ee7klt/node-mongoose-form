@@ -11,10 +11,16 @@ router.get('/', function(req, res, next) {
 
 
 router.post('/', function(req, res) {
-  new Profile({firstName: req.body.comment})
+  new Profile({
+    firstName: req.body.firstName,
+    lastName: req.body.lastName,
+    phone: req.body.phone,
+    eMail: req.body.eMail,
+    essay: req.body.essay
+  })
   .save(function(err, data) {
-    console.log(data);
-    //res.redirect('form')
+    console.log('profile data' + data);
+  //  res.redirect('elite')
   })
 
 });
