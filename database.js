@@ -7,20 +7,29 @@ var db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));
 
-var Comment = new Schema({
-  title: String,
+
+
+
+db.once('on', function() { // wait for db to connect before starting app ??
+
+  var Comment = new Schema({
+    title: String,
+  })
+
+  var ProfileData = new Schema({
+    firstName: String,
+    lastName: String,
+    eMail: String,
+    phone: String,
+    essay: String
+  })
+
+
+  mongoose.model('comments', Comment);
+  mongoose.model('profile', ProfileData);
+
 })
 
-var ProfileData = new Schema({
-  firstName: String,
-  lastName: String,
-  eMail: String,
-  phone: String,
-  essay: String
-})
 
 
-mongoose.model('comments', Comment);
-mongoose.model('profile', ProfileData);
-
-mongoose.connect('mongodb://localhost/node-data');
+// mongoose.connect('mongodb://localhost/node-data');
