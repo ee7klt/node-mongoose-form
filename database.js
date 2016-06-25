@@ -1,12 +1,15 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-//var mongodbUri = 'mongodb://heroku_8g805ms9:92i88feoselvketcs2fsjk4hb3@ds023664.mlab.com:23664/heroku_8g805ms9'
-var mongodbUri = 'mongodb://test:test@ds023654.mlab.com:23654/elitemongoose';
+var mongodbUri = 'mongodb://heroku_8g805ms9:92i88feoselvketcs2fsjk4hb3@ds023664.mlab.com:23664/heroku_8g805ms9'
+//var mongodbUri = 'mongodb://test:test@ds023654.mlab.com:23654/elitemongoose';
 mongoose.connect(mongodbUri);
 var db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));
+db.on('connected', function() {
+  console.log('Mongoose connected to '+mongodbUri);
+});
 
 
 
