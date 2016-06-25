@@ -148,12 +148,14 @@ input[type="file"] {
 .star.mdl-button {
   //outline: green 2px solid;
   margin: 0px;
+  transform: scale(.5);
   transition: all .4s .2s;
+
 
 }
 
 .star.focused.mdl-button {
-  transform: scale(3);
+  transform: scale(1.5);
 }
 
 
@@ -188,7 +190,7 @@ transform: translate(-6%,0);
 
 @keyframes drop {
   0%{top: 10px}
-  100%{top: 0px}
+  100%{top: 100px}
 }
 
 #successtext.focused {
