@@ -1,7 +1,8 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var mongodbUri = 'mongodb://heroku_8g805ms9:92i88feoselvketcs2fsjk4hb3@ds023664.mlab.com:23664/heroku_8g805ms9'
+//var mongodbUri = 'mongodb://heroku_8g805ms9:92i88feoselvketcs2fsjk4hb3@ds023664.mlab.com:23664/heroku_8g805ms9'
+var mongodbUri = 'mongodb://test:test@ds023654.mlab.com:23654/elitemongoose';
 mongoose.connect(mongodbUri);
 var db = mongoose.connection;
 
@@ -10,7 +11,7 @@ db.on('error', console.error.bind(console, 'connection error:'));
 
 
 
-db.once('on', function() { // wait for db to connect before starting app ??
+// db.once('on', function() { // wait for db to connect before starting app ??
 
   var Comment = new Schema({
     title: String,
@@ -28,7 +29,7 @@ db.once('on', function() { // wait for db to connect before starting app ??
   mongoose.model('comments', Comment);
   mongoose.model('profile', ProfileData);
 
-})
+// })
 
 
 

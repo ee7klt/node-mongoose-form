@@ -27,11 +27,11 @@ router.post('/',  multer({ dest: './uploads/'}).single('resume'),
     essay: req.body.essay
   })
   .save(function(err, data) {
-    console.log('profile data' + data);
+  //  console.log('profile data' + data);
   //  res.redirect('elite')
   })
-  console.log(req.body);
-  console.log(req.files);
+  //console.log(req.body);
+  //console.log(req.files);
   res.status(204).end();
 
 
