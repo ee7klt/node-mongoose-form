@@ -1,4 +1,199 @@
 
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,300italic,400italic,500italic,700italic,700);
+
+.demo-card-square.mdl-card {
+
+  width: 320px;
+  height: 320px;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background:
+    url('https://unsplash.it/320/320?random') bottom right 15% no-repeat #46B6AC;
+
+}
+
+.demo-card-square {
+    margin: 0px 10px 0px 10px;
+}
+.demo-card-wide.mdl-card {
+  width: 512px;
+
+
+}
+.demo-card-wide > .mdl-card__title {
+  color: #efefef;
+  height: 50px;
+  background-color: indigo;
+}
+
+
+.demo-card-wide > .mdl-card__menu {
+  color: red;
+}
+
+
+body {
+  font-family: 'Roboto', serif;
+}
+
+#header {
+margin: 0px 0px 0px 0px;
+background-color: #a9a9a9;
+  height: 300px;
+  outline: solid yellow 10px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+
+
+#arrow {
+  z-index: 11;
+  font-size: 100px;
+  text-align: center;
+  position: relative;
+  bottom: 40px;
+}
+
+#header-content {
+  background: url('https://unsplash.it/1080/300?random') center / cover;
+  color: white;
+  font-size: 64px;
+  line-height: 300px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#bg-img {
+
+  background: url('https://unsplash.it/1000/600?image=1078') #caebf2 fixed center;
+ height: 300px;
+  opacity: 0.7;
+}
+
+#nav {
+
+  height: 50px;
+  display: flex;
+  z-index: 10;
+}
+.nav-unit {
+  margin: 0px 0px;
+    background: #a9a9a9;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-grow:1;
+  text-align: center;
+  color: #caebf2;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5em;
+  height: 50px;
+  text-shadow: 0px 2px 3px #555;
+
+}
+
+#requirements {
+  height: 500px;
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    flex-direction: column;
+}
+
+
+#requirements > .demo-list-item {
+  width: 480px;
+}
+
+#interested {
+  margin: 0px 0px 20px 0px;
+  width: 480px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+#application-cards {
+
+display: flex;
+  justify-content: center;
+}
+
+#apply {
+    background-color: #caebf2;
+  height: 700px;
+display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  outline: solid 10px limegreen;
+
+
+
+}
+#slider {
+  width: 850px;
+
+
+}
+
+.gallery {
+  width: 100%;
+    height: 300px;
+  contain: true;
+
+}
+
+
+.gallery-cell {
+  width: 100%;
+height: 100%;
+
+  display:flex;
+  justify-content: center;
+
+
+
+
+
+}
+
+.flickity-prev-next-button {
+  background: transparent;
+}
+
+.flickity-prev-next-button:hover {
+  background: transparent;
+}
+
+#about {
+  height: 500px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+#about-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#footer {
+background-color: #ff3b3f;
+  height: 100px;
+}
+
 
 
 .demo-card-wide.mdl-card {
@@ -16,7 +211,7 @@ height: 300px;
   height: 600px;
   width: 800px;
 //  outline: 2px solid limegreen;
-  // overflow:hidden;
+   overflow:hidden;
 
 }
 
