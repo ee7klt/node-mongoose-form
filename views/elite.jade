@@ -31,33 +31,36 @@ html
       | Who are we?
     br
   #about-cards
-    .demo-card-square.mdl-card.mdl-shadow--2dp
+    
+    #progressive.demo-card-square.mdl-card.mdl-shadow--2dp
       .mdl-card__title.mdl-card--expand
         h2.mdl-card__title-text Progressive
       .mdl-card__supporting-text
-        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        | Aenan convallis.
-      .mdl-card__actions.mdl-card--border
-        a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
-          | View Updates
-    .demo-card-square.mdl-card.mdl-shadow--2dp
+        | Elite Global Language Learning Center was established in 2009 as a premier 
+        | language instruction center for children aged 6 and above. We focus on building
+        | strong foundational writing, speaking and grammar skills that will
+        | prepare our students for life-long independent learning.
+    
+    #fun.demo-card-square.mdl-card.mdl-shadow--2dp
       .mdl-card__title.mdl-card--expand
         h2.mdl-card__title-text Fun
       .mdl-card__supporting-text
-        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        | Aenan convallis.
-      .mdl-card__actions.mdl-card--border
-        a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
-          | View Updates
-    .demo-card-square.mdl-card.mdl-shadow--2dp
+        | Elite encourages a positive and creative dynamic between students while providing a supportive environment for teachers and a conducive
+        | study environment for students. Students eagerly look forward to attending
+        | their classes and make new friends in the process. 
+        
+    
+      
+    #map.demo-card-square.mdl-card.mdl-shadow--2dp
       .mdl-card__title.mdl-card--expand
         h2.mdl-card__title-text Centrally located
       .mdl-card__supporting-text
-        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        | Aenan convallis.
+        | Located in the heart of the Hartamas/Mont Kiara area,
+        | we are easily accessible from downtown via Jalan Kuching
+        | as well as from PJ via Sprint Highway. 
       .mdl-card__actions.mdl-card--border
-        a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
-          | View Updates
+        a(href='http://www.google.com', target='_blank').mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
+          | View Map
 #requirements
   #looking-for
     h3
@@ -81,9 +84,17 @@ html
 #apply
   #interested
     h3 Yes, I'm interested!
-    p
-      | Do you love working with children? Do thrive on the energy of a fast-paced work environment and have a knack for multi-tasking? Are you an intermediate (or better) Korean language student and want to sharpen your conversational skills? If so then we'd love to hear from you! Just help us fill out a few details and we'll get back to you as soon as possible!
-      #window
+    p#blurb
+      | Your responsibilities will include general administrative tasks
+      | including coordinating pick-up and drop service and fielding calls
+      | from parents. Don't worry, we'll always be on hand for you to ask questions 
+      | and to provide you with the necessary guidance. There won't a dull moment at Elite
+      | and we guarantee you'll learn a wealth of transferrable skills!
+      | The duration of employment in the first instance will be for the holiday programme
+      | for the months of July and August. Thereafter, there is a possibility for staying on 
+      | as a part-time or even a full-time staff.
+      | Simply fill out the 3-page form below and we'll get back to you ASAP!
+    #window
         form#myform(method="post", enctype="multipart/form-data", action="")
           #cards
             fieldset#contactform
@@ -116,7 +127,7 @@ html
                   button#next.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored.next(disabled='')
                     i.material-icons arrow_forward
             fieldset#essayform
-              #mycard2
+              #mycard2.hidden
                 .demo-card-wide.mdl-card.mdl-shadow--2dp
                   .mdl-card__title
                     h2.mdl-card__title-text Short essay
@@ -134,7 +145,7 @@ html
                   button#nextessay.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored.next(disabled='')
                     i.material-icons arrow_forward
             fieldset#uploadform
-              #mycard3
+              #mycard3.hidden
                 .demo-card-wide.mdl-card.mdl-shadow--2dp
                   .mdl-card__title
                     h2.mdl-card__title-text Resume upload (optional)
@@ -154,7 +165,7 @@ html
                     i.material-icons arrow_forward
             fieldset
               #mycard4
-                .succss.demo-card-wide.mdl-card.mdl-shadow--2dp
+                .success.demo-card-wide.mdl-card.mdl-shadow--2dp
                   #successtext
                     h4 Thank your for your application.   We'll be in touch!
                   #star

@@ -4,17 +4,36 @@
 .demo-card-square.mdl-card {
 
   width: 320px;
-  height: 320px;
+  height: 380px;
 }
 .demo-card-square > .mdl-card__title {
   color: #fff;
-  background:
-    url('https://unsplash.it/320/320?random') bottom right 15% no-repeat #46B6AC;
+//  background:
+  //  url('https://unsplash.it/320/320?random') top left 15% no-repeat #46B6AC;
 
 }
 
+#progressive > .mdl-card__title {
+  background:
+      url('../elite1.jpg') bottom right 100% no-repeat #46B6AC;
+  background-size: 320px;
+}
+
+#fun > .mdl-card__title {
+  background:
+      url('../elite2.jpg') bottom right 100% no-repeat #46B6AC;
+  background-size: 320px;
+}
+
+#map > .mdl-card__title {
+  background:
+      url('../elitemap.png') top left 100% no-repeat #46B6AC;
+  background-size: cover;
+}
+
 .demo-card-square {
-    margin: 0px 10px 0px 10px;
+    margin: 0px 10px 15px 10px;
+
 }
 .demo-card-wide.mdl-card {
   width: 512px;
@@ -108,12 +127,12 @@ background-color: #a9a9a9;
 
 
 #requirements > .demo-list-item {
-  width: 480px;
+  //width: 480px;
 }
 
 #interested {
-  margin: 0px 0px 20px 0px;
-  width: 480px;
+  margin: 15px 20px 20px 20px;
+  // width: 480px;
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -129,7 +148,7 @@ display: flex;
 
 #apply {
     background-color: #caebf2;
-  height: 700px;
+//  height: 700px;
 display:flex;
   flex-direction: column;
   align-items: center;
@@ -175,11 +194,12 @@ height: 100%;
 }
 
 #about {
-  height: 500px;
+
   display:flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-bottom: 20px;
 
 }
 
@@ -187,6 +207,8 @@ height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
+
 }
 
 #footer {
@@ -204,14 +226,17 @@ height: 300px;
 }
 
 
-
+p#blurb {
+  margin: auto;
+}
 
 
 #window {
-  height: 600px;
-  width: 800px;
-//  outline: 2px solid limegreen;
+  height: 300px;
+  width: 600px;
+  outline: 2px solid limegreen;
    overflow:hidden;
+   margin: 20px;
 
 }
 
@@ -263,16 +288,20 @@ color: #fff;
 
 
 #mycard, #mycard2, #mycard3, #mycard4 {
-height: 600px;
-width:800px;
+height: 300px;
+width:600px;
 display:flex;
 flex-direction: row;
- //outline: red solid 2px;
+ outline: red solid 2px;
 justify-content: center;
 align-items: center;
 
 }
 
+
+.hidden {
+   display: none;
+ }
 
 .next {
 position: relative;

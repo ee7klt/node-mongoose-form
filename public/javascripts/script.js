@@ -16,28 +16,33 @@ var nextButton = document.querySelectorAll('.next');
 var cards = document.getElementById('cards');
 var success = document.getElementById('success');
 var successText = document.getElementById('successtext');
+var mycard2 = document.getElementById('mycard2');
+var mycard3 = document.getElementById('mycard3');
+var mycard4 = document.getElementById('mycard4');
 //var msg = document.getElementById('status');
 
 
 nextContact.addEventListener('click',function(e) {
   e.preventDefault();
   window.console.log('nextContact button clicked');
-  cards.style.transform ='translateX('+-800+'px)';
-
+  cards.style.transform ='translateX('+-600+'px)';
+  mycard2.classList.remove('hidden');
 
 });
 
 nextEssay.addEventListener('click',function(e) {
   e.preventDefault();
   window.console.log('nextEssay button clicked');
-  cards.style.transform ='translateX('+-800*2+'px)';
-
+  cards.style.transform ='translateX('+-600*2+'px)';
+  mycard3.classList.remove('hidden');
 
 });
 
 nextFile.addEventListener('click',function() {
+    //mycard4.classList.remove('hidden');
   window.console.log('nextFile button clicked');
-  cards.style.transform ='translateX('+-800*3+'px)';
+  cards.style.transform ='translateX('+-600*3+'px)';
+
   success.classList.add('focused');
     successText.classList.add('focused');
 
