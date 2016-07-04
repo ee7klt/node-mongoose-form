@@ -1,12 +1,12 @@
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,300italic,400italic,500italic,700italic,700);
 
-.demo-card-square.mdl-card {
+  #about-cards .demo-card-square.mdl-card {
 
   width: 320px;
   height: 380px;
 }
-.demo-card-square > .mdl-card__title {
+  #about-cards .demo-card-square > .mdl-card__title {
   color: #fff;
 //  background:
   //  url('https://unsplash.it/320/320?random') top left 15% no-repeat #46B6AC;
@@ -31,23 +31,23 @@
   background-size: cover;
 }
 
-.demo-card-square {
+  #about-cards .demo-card-square {
     margin: 0px 10px 15px 10px;
 
 }
-.demo-card-wide.mdl-card {
+  #about-cards .demo-card-wide.mdl-card {
   width: 512px;
 
 
 }
-.demo-card-wide > .mdl-card__title {
+  #about-cards .demo-card-wide > .mdl-card__title {
   color: #efefef;
   height: 50px;
   background-color: indigo;
 }
 
 
-.demo-card-wide > .mdl-card__menu {
+  #about-cards .demo-card-wide > .mdl-card__menu {
   color: red;
 }
 
@@ -86,35 +86,7 @@ background-color: #a9a9a9;
   text-transform: uppercase;
 }
 
-#bg-img {
 
-  background: url('https://unsplash.it/1000/600?image=1078') #caebf2 fixed center;
- height: 300px;
-  opacity: 0.7;
-}
-
-#nav {
-
-  height: 50px;
-  display: flex;
-  z-index: 10;
-}
-.nav-unit {
-  margin: 0px 0px;
-    background: #a9a9a9;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-grow:1;
-  text-align: center;
-  color: #caebf2;
-  line-height: 50px;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.5em;
-  height: 50px;
-  text-shadow: 0px 2px 3px #555;
-
-}
 
 #requirements {
   height: 500px;
@@ -158,40 +130,7 @@ display:flex;
 
 
 }
-#slider {
-  width: 850px;
 
-
-}
-
-.gallery {
-  width: 100%;
-    height: 300px;
-  contain: true;
-
-}
-
-
-.gallery-cell {
-  width: 100%;
-height: 100%;
-
-  display:flex;
-  justify-content: center;
-
-
-
-
-
-}
-
-.flickity-prev-next-button {
-  background: transparent;
-}
-
-.flickity-prev-next-button:hover {
-  background: transparent;
-}
 
 #about {
 
@@ -212,142 +151,42 @@ height: 100%;
 }
 
 #footer {
-background-color: #ff3b3f;
+background-color: #212121 !important;
   height: 100px;
 }
 
 
 
-.demo-card-wide.mdl-card {
-width: 600px;
-height: 300px;
- //outline: limegreen 10px solid;
-// display: flex;
-}
+
 
 
 p#blurb {
-  margin: auto;
+  //margin-left:50px;
+  //margin-right:50px;
+  width: 400px;
 }
 
 
-#window {
-  height: 300px;
-  width: 600px;
-  outline: 2px solid limegreen;
-   overflow:hidden;
-   margin: 20px;
 
+#success {
+  color: #ee6e73;
+  text-align: center;
+  padding: 20px;
 }
 
-#cards {
-
- display:flex;
- flex-direction: row;
- width: 2400px;
- transition: all .4s;
-}
-
-
-#name {
-display:flex;
-margin-top: 10px;
-justify-content: left;
-
-}
-
-#contact{
+/* resume upload */
+#uploadelements {
   display: flex;
-
-}
-
-
-.mdl-button {
-// outline: red solid 5px;
-margin-left: 10px ;
-
-}
-
-
-
-.demo-card-wide > .mdl-card__title {
-color: #fff;
-height: 64px;
-background-color:indigo;
-}
-
-.mdl-card__title-text {
-position: relative;
-top: 6px;
-
-}
-
-.demo-card-wide > .mdl-card__menu {
-color: #fff;
-}
-
-
-#mycard, #mycard2, #mycard3, #mycard4 {
-height: 300px;
-width:600px;
-display:flex;
-flex-direction: row;
- outline: red solid 2px;
-justify-content: center;
-align-items: center;
-
-}
-
-
-.hidden {
-   display: none;
- }
-
-.next {
-position: relative;
-top: 95px;
-right: 38px;
-z-index:1;
-opacity: 1;
-
-
-}
-
-#next:disabled, #nextessay:disabled, #nextfile:disabled {
-  background-color: #dfdfdf;
-
-}
-
-
-#essay {
-  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //outline: pink 2px solid;
+  margin-top: 30px;
 }
 
 
 
-
-#contactform {
-
-//  padding-bottom:100px;
-}
-
-.mdl-textfield {
-  margin-right: 10px;
-}
-
-
-
-.material-icons.md-18 {
-  font-size: 18px;
-}
-
-.material-icons.md-64, .mdl-button.mdl-64 {
-  font-size: 64px;
-}
-
-
-
-input[type="file"] {
+.none {
   display: none;
 }
 
@@ -357,66 +196,114 @@ input[type="file"] {
   margin-left: 20px;
 }
 
+#container .mdl-card__supporting-text {
+  height: 265px;
+}
+/* end resume upload */
+
+
+/*#essaytext-expanded {
+  display: none;
+  width: 550px;
+}*/
+
+
+
+
+#scroll {
+  height: 402px;
+  width: 322px;
+  //outline: 1px dotted blue;
+  overflow: hidden;
+}
+
+
+#container {
+  height: 400px;
+  width: calc(4*320px);
+  //outline: 2px solid limegreen;
+  transition: all .4s ease-in-out;
+
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+#container .demo-card-square.mdl-card {
+  width: 320px;
+  height: 400px;
+}
+#container  .demo-card-square > .mdl-card__title {
+  color: #fff;
+  background: #46B6AC;
+//  outline: red solid 2px;
+}
+
+
+
+#container  .mdl-card__supporting-text > .mdl-textfield {
+  width: 200px;
+
+}
+
+
+
+#essaytext {
+   width: 300px;
+  // outline: red solid 2px;
+}
+
+#essaytext .mdl-textfield.is-focused {
+  width: 300px;
+}
+
+
+
+#container  .mdl-card__actions > .mdl-button {
+  float: right;
+}
+
+@media all and (min-width: 605px)  {
+  #container {
+    height: 300px;
+    width: calc(4*600px);
+  }
+
+  #container  .demo-card-square.mdl-card {
+    width: 600px;
+    height: 300px;
+  }
+
+  #scroll {
+    height: 302px;
+    width: 602px;
+  }
+
+/* resize essay box */
+
+#essaytext {
+   width: 550px;
+   height: 90px;
+  // outline: red solid 2px;
+}
+
+#essaytext .mdl-textfield.is-focused {
+  width: 550px;
+}
+/* add the large essay box */
+/* this is a problem because the text typed in will not remain when resizing the wiindow */
+  /*#essaytext-expanded {
+    display: block;
+  }*/
 
 
 #uploadelements {
-  display: flex;
-  //margin-top: 20px;
-  //height: 100%;
-  justify-content: center;
-  align-items: center;
-  //outline: pink 2px solid;
-
-}
-
-.star.mdl-button {
-  //outline: green 2px solid;
-  margin: 0px;
-  transform: scale(.5);
-  transition: all .4s .2s;
-
-
-}
-
-.star.focused.mdl-button {
-  transform: scale(1.5);
+  flex-direction: row;
 }
 
 
-
-#star {
-  display: flex;
-  flex-direction: column;
-align-items: center;
-  //outline: red solid 2px;
-  justify-content: center;
-  margin: 2px;
-  height: 100%;
-
-}
-
-
-.success.mdl-card {
-  position: relative;
-}
-#successtext {
-
-  position: absolute;
-  padding-bottom: 10px;
- top: -100px;
-left: 12%;
-transform: translate(-6%,0);
-  transition: all .4s .5s ease-in-out;
-  //outline: blue 2px solid;
-}
-
-
-
-@keyframes drop {
-  0%{top: 10px}
-  100%{top: 100px}
-}
-
-#successtext.focused {
-  top: 0px;
+/* this makes all cards have uniform content height */
+#container .mdl-card__supporting-text {
+  height: 155px;
 }

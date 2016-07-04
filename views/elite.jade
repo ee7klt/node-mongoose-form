@@ -59,7 +59,7 @@ html
         | we are easily accessible from downtown via Jalan Kuching
         | as well as from PJ via Sprint Highway. 
       .mdl-card__actions.mdl-card--border
-        a(href='http://www.google.com', target='_blank').mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
+        a(href='https://www.google.com.my/maps/place/Elite+Global+Language+Learning+Centre/@3.1603074,101.648098,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc48f01d782037:0xc2c66c4e5cadb604!8m2!3d3.160302!4d101.650292?hl=en', target='_blank').mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
           | View Map
 #requirements
   #looking-for
@@ -94,84 +94,64 @@ html
       | for the months of July and August. Thereafter, there is a possibility for staying on 
       | as a part-time or even a full-time staff.
       | Simply fill out the 3-page form below and we'll get back to you ASAP!
-    #window
-        form#myform(method="post", enctype="multipart/form-data", action="")
-          #cards
-            fieldset#contactform
-              #mycard
-                .demo-card-wide.mdl-card.mdl-shadow--2dp
-                  .mdl-card__title
-                    h2.mdl-card__title-text Contact details
-                  .mdl-card__supporting-text
-                    | First, tell us how to get in touch with you!
-                    #name
-                      .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
-                        input#first.mdl-textfield__input(type='text', required='', name = 'firstName')
-                        label.mdl-textfield__label(for='firstName') First Name
-                      .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
-                        input#last.mdl-textfield__input(type='text', required='', name = 'lastName')
-                        label.mdl-textfield__label(for='lastName') Last Name
-                    #contact
-                      #phone
-                        .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
-                          input#mobile.mdl-textfield__input(name='phone', type='text', pattern='-?[0-9]*(\.[0-9]+)?', required='')
-                          label.mdl-textfield__label(for='phone') Mobile Phone
-                          span.mdl-textfield__error Mobile must be a number!
-                      #email
-                        .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
-                          input#mail.mdl-textfield__input(name='eMail', type='email', pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$', required='')
-                          label.mdl-textfield__label(for='eMail') E-mail
-                          span.mdl-textfield__error Enter a valid email!
-                // FAB button with ripple
-                div
-                  button#next.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored.next(disabled='')
-                    i.material-icons arrow_forward
-            fieldset#essayform
-              #mycard2.hidden
-                .demo-card-wide.mdl-card.mdl-shadow--2dp
-                  .mdl-card__title
-                    h2.mdl-card__title-text Short essay
-                  .mdl-card__supporting-text
-                    | We'd like to learn more about you!
-                    | You can talk about anything (hobbies, favorite drama etc.) and of course your motivation for applying.
-                    br
-                    |                 Writing in Korean is optional, but why not use this opportunity to show off your skills!
-                    form#essayform(action='#')
-                      #essay.mdl-textfield.mdl-js-textfield
-                        textarea#essaytext.mdl-textfield__input(name='essay', type='text', rows='6')
-                        label.mdl-textfield__label(for='essay') Start here (minimum of 50 words)...
-                // FAB button with ripple
-                div
-                  button#nextessay.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored.next(disabled='')
-                    i.material-icons arrow_forward
-            fieldset#uploadform
-              #mycard3.hidden
-                .demo-card-wide.mdl-card.mdl-shadow--2dp
-                  .mdl-card__title
-                    h2.mdl-card__title-text Resume upload (optional)
-                  .mdl-card__supporting-text
-                    | Please upload your resume in a valid format if you have one handy. Otherwise don't sweat it for now. (You'll need one if you do get invited for an interview though)
-                  #uploadelements
-                    #resume_upload_button
-                      label.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored(for='resume-upload')
-                        i.material-icons file_upload
-                        input#resume-upload.none(type='file', name='resume')
-                    #file-input-text-div.mdl-textfield.mdl-js-textfield
-                      input#file_input_text.file_input_text.mdl-textfield__input(type='text', disabled='', readonly='')
-                      label.mdl-textfield__label(for='file_input_text')
-                // FAB button with ripple
-                div
-                  button#nextfile.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored.next
-                    i.material-icons arrow_forward
-            fieldset
-              #mycard4
-                .success.demo-card-wide.mdl-card.mdl-shadow--2dp
-                  #successtext
-                    h4 Thank your for your application.   We'll be in touch!
-                  #star
-                    #success.star.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored
-                      i.material-icons star
-      #status
+    #scroll
+     form#myform(method='post', ,='', enctype='multipart/form-data', action='')
+      #container
+        #contact.appcards.demo-card-square.mdl-card.mdl-shadow--2dp
+          .mdl-card__title.mdl-card--expand
+            h2.mdl-card__title-text Contact details
+          .mdl-card__supporting-text
+            .mdl-textfield.mdl-js-textfield
+              input#firstName.mdl-textfield__input(type='text', required='')
+              label.mdl-textfield__label(for='firstName') First Name
+            .mdl-textfield.mdl-js-textfield
+              input#lastName.mdl-textfield__input(type='text', required='')
+              label.mdl-textfield__label(for='lastName') Last Name
+            .mdl-textfield.mdl-js-textfield
+              input#email.mdl-textfield__input(type='text', required='')
+              label.mdl-textfield__label(for='email') E-mail
+            .mdl-textfield.mdl-js-textfield
+              input#phone.mdl-textfield__input(type='text', required='')
+              label.mdl-textfield__label(for='phone') Phone #
+          .mdl-card__actions.mdl-card--border
+            a.next.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
+              | Next
+        #essay.appcards.demo-card-square.mdl-card.mdl-shadow--2dp.none
+          .mdl-card__title.mdl-card--expand
+            h2.mdl-card__title-text Essay
+          .mdl-card__supporting-text
+            | Tell us something about yourself, e.g. your hobbies, or why you're applying to this job. Writing in Korean is not necessary, but we're sure you'd like to show off your skills!
+            .mdl-textfield.mdl-js-textfield
+              textarea#essaytext.mdl-textfield__input(type='text', rows='8')
+              label.mdl-textfield__label(for='essaytext') Start here!
+            //
+              <div class="mdl-textfield mdl-js-textfield" id="essaytext-expanded">
+              <textarea class="mdl-textfield__input" type="text" rows= "3"  ></textarea>
+              <label class="mdl-textfield__label" for="essaytext">Start here!</label>
+              </div>
+          .mdl-card__actions.mdl-card--border
+            a.next.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
+              | Next
+        #resume.appcards.demo-card-square.mdl-card.mdl-shadow--2dp.none
+          .mdl-card__title.mdl-card--expand
+            h2.mdl-card__title-text Resume (optional)
+          .mdl-card__supporting-text
+            | Please upload your resume, if you have one handy, otherwise don't sweat it. You can bring it along at the interview.
+            #uploadelements
+              #resume_upload_button
+                label.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored
+                  i.material-icons file_upload
+                  input#resumeupload.none(type='file')
+                  // .none = display: none
+              #file-input-text-div.mdl-textfield.mdl-js-textfield
+                input#file_input_text.file_input_text.mdl-textfield__input(type='text', disabled='', readonly='')
+                label.mdl-textfield__label(for='file_input_text')
+          .mdl-card__actions.mdl-card--border
+            a.next.submit.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
+              | submit
+        #success.appcards.demo-card-square.mdl-card.mdl-shadow--2dp.none
+          h2 Thanks for your application.
+          h3 We'll be in touch ASAP!
 footer#footer
   div
 
