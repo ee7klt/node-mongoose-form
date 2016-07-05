@@ -95,23 +95,23 @@ html
       | as a part-time or even a full-time staff.
       | Simply fill out the 3-page form below and we'll get back to you ASAP!
     #scroll
-     form#myform(method='post', ,='', enctype='multipart/form-data', action='')
+     form#myform(method='post', enctype='multipart/form-data', action='')
       #container
         #contact.appcards.demo-card-square.mdl-card.mdl-shadow--2dp
           .mdl-card__title.mdl-card--expand
             h2.mdl-card__title-text Contact details
           .mdl-card__supporting-text
             .mdl-textfield.mdl-js-textfield
-              input#firstName.mdl-textfield__input(type='text', required='')
+              input#firstName.mdl-textfield__input(type='text', required='', name='firstName')
               label.mdl-textfield__label(for='firstName') First Name
             .mdl-textfield.mdl-js-textfield
-              input#lastName.mdl-textfield__input(type='text', required='')
+              input#lastName.mdl-textfield__input(type='text', required='', name = 'lastName')
               label.mdl-textfield__label(for='lastName') Last Name
             .mdl-textfield.mdl-js-textfield
-              input#email.mdl-textfield__input(type='text', required='')
+              input#email.mdl-textfield__input(type='text', required='', name = 'email')
               label.mdl-textfield__label(for='email') E-mail
             .mdl-textfield.mdl-js-textfield
-              input#phone.mdl-textfield__input(type='text', required='')
+              input#phone.mdl-textfield__input(type='text', required='', name = 'phone')
               label.mdl-textfield__label(for='phone') Phone #
           .mdl-card__actions.mdl-card--border
             a.next.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
@@ -122,7 +122,7 @@ html
           .mdl-card__supporting-text
             | Tell us something about yourself, e.g. your hobbies, or why you're applying to this job. Writing in Korean is not necessary, but we're sure you'd like to show off your skills!
             .mdl-textfield.mdl-js-textfield
-              textarea#essaytext.mdl-textfield__input(type='text', rows='8')
+              textarea#essaytext.mdl-textfield__input(type='text', rows='8', name = 'essaytext')
               label.mdl-textfield__label(for='essaytext') Start here!
             //
               <div class="mdl-textfield mdl-js-textfield" id="essaytext-expanded">
@@ -141,7 +141,7 @@ html
               #resume_upload_button
                 label.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored
                   i.material-icons file_upload
-                  input#resumeupload.none(type='file')
+                  input#resumeupload.none(type='file', name='resume')
                   // .none = display: none
               #file-input-text-div.mdl-textfield.mdl-js-textfield
                 input#file_input_text.file_input_text.mdl-textfield__input(type='text', disabled='', readonly='')

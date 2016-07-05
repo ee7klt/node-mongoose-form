@@ -23,8 +23,8 @@ router.post('/',  multer({ dest: './uploads/'}).single('resume'),
     firstName: req.body.firstName,
     lastName: req.body.lastName,
     phone: req.body.phone,
-    eMail: req.body.eMail,
-    essay: req.body.essay
+    eMail: req.body.email,
+    essay: req.body.essaytext
   })
   .save(function(err, data) {
   //  console.log('profile data' + data);

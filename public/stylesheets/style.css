@@ -89,12 +89,15 @@ background-color: #a9a9a9;
 
 
 #requirements {
-  height: 500px;
+
   background-color: #efefef;
   display: flex;
   justify-content: center;
   align-items: center;
     flex-direction: column;
+  //outline: red solid 2px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 
@@ -126,7 +129,8 @@ display:flex;
   align-items: center;
   justify-content: center;
   //outline: solid 10px limegreen;
-
+padding-top: 20px;
+padding-bottom: 20px;
 
 
 }
@@ -139,6 +143,7 @@ display:flex;
   justify-content: center;
   flex-direction: column;
   padding-bottom: 20px;
+  padding-top: 20px;
 
 }
 
@@ -215,6 +220,8 @@ p#blurb {
   width: 322px;
   //outline: 1px dotted blue;
   overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 
