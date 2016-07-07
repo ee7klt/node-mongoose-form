@@ -56,12 +56,7 @@ body {
   font-family: 'Roboto', serif;
 }
 
-#header {
-margin: 0px 0px 0px 0px;
-background-color: #a9a9a9;
-  height: 600px;
-  //outline: solid yellow 10px;
-}
+
 
 .material-icons.md-48 {
   font-size: 48px;
@@ -77,11 +72,18 @@ background-color: #a9a9a9;
   bottom: 40px;
 }
 
+#header {
+margin: 0px 0px 0px 0px;
+background-color: #a9a9a9;
+  height: 300px;
+  //outline: solid yellow 10px;
+}
+
 #header-content {
   background: url('../elitegloal.jpg') center / cover;
   color: white;
-  font-size: 64px;
-  line-height: 600px;
+  font-size: 48px;
+  line-height: 300px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -98,11 +100,14 @@ background-color: #a9a9a9;
   //outline: red solid 2px;
   padding-top: 20px;
   padding-bottom: 20px;
+
 }
 
 
-#requirements > .demo-list-item {
+#requirements-list {
   //width: 480px;
+  width:80%;
+  margin: auto;
 }
 
 #interested {
@@ -166,9 +171,8 @@ background-color: #212121 !important;
 
 
 p#blurb {
-  //margin-left:50px;
-  //margin-right:50px;
-  width: 400px;
+  width: 80%;
+  margin: auto;
 }
 
 
@@ -272,6 +276,38 @@ p#blurb {
 }
 
 @media all and (min-width: 605px)  {
+
+  #requirements-list {
+    //width: 480px;
+    width:50%;
+    margin: auto;
+  }
+
+  #header {
+  margin: 0px 0px 0px 0px;
+  background-color: #a9a9a9;
+    height: 600px;
+    //outline: solid yellow 10px;
+  }
+
+  #header-content {
+
+    color: white;
+    font-size: 64px;
+    line-height: 600px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+
+
+  p#blurb {
+    width: 50%;
+    margin: auto;
+  }
+
+
+
   #container {
     height: 300px;
     width: calc(4*600px);
