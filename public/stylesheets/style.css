@@ -65,11 +65,11 @@ body {
 
 
 #arrow {
-  z-index: 11;
-  font-size: 100px;
+
+
   text-align: center;
   position: relative;
-  bottom: 40px;
+  bottom: 30px;
 }
 
 #header {
