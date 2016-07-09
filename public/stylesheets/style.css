@@ -1,6 +1,23 @@
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,300italic,400italic,500italic,700italic,700);
 
+body.mdl-progress {
+  text-align: center;
+  height: 10px;
+}
+
+section {
+  opacity: 0;
+    -webkit-transition:opacity .6s;
+    -moz-transition:opacity .6s;
+    -o-transition:opacity .6s;
+    transition: opacity .6s;
+}
+
+.loaded section {
+  opacity: 1;
+}
+
   #about-cards .demo-card-square.mdl-card {
 
   width: 320px;
@@ -17,6 +34,7 @@
   background:
       url('../elite1.jpg') bottom right 100% no-repeat #46B6AC;
   background-size: 320px;
+
 }
 
 #fun > .mdl-card__title {
@@ -54,6 +72,7 @@
 
 body {
   font-family: 'Roboto', serif;
+
 }
 
 

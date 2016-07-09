@@ -13,158 +13,158 @@ html
       ga('create', 'UA-43264951-2', 'auto');
       ga('send', 'pageview');
 
-  body
-  
-  header#header
-    #header-content
-      | Come join us!
-    #arrow
-      button.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored
-        i.material-icons keyboard_arrow_down
-//
-  <div class="row" id="nav">
-  <div class="nav-unit" >
-  nav
-  </div>
-  <div class="nav-unit" >
-  1
-  </div>
-  <div class="nav-unit" >
-  1
-  </div>
-  <div class="nav-unit" >
-  1
-  </div>
-  </div>
-#about
-  #whoarewe
-    h3
-      | Who are we?
-    br
-  #about-cards
-    
-    #progressive.demo-card-square.mdl-card.mdl-shadow--2dp
-      .mdl-card__title.mdl-card--expand
-        h2.mdl-card__title-text Progressive
-      .mdl-card__supporting-text
-        | Elite Global Language Learning Center was established in 2009 as a premier 
-        | language instruction center for children aged 6 and above. We focus on building
-        | strong foundational writing, speaking and grammar skills that will
-        | prepare our students for life-long independent learning.
-    
-    #fun.demo-card-square.mdl-card.mdl-shadow--2dp
-      .mdl-card__title.mdl-card--expand
-        h2.mdl-card__title-text Fun
-      .mdl-card__supporting-text
-        | Elite encourages a positive and creative dynamic between students while providing a supportive environment for teachers and a conducive
-        | study environment for students. Students eagerly look forward to attending
-        | their classes and make new friends in the process. 
+ body.mdl-progress.mdl-js-progress.mdl-progress__indeterminate
+
+  section  
+    header#header
+      #header-content
+        | Come join us!
+      #arrow
+        button.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored(onclick='scroll(0, 100);')
+          i.material-icons keyboard_arrow_down
+    //
+      <div class="row" id="nav">
+      <div class="nav-unit" >
+      nav
+      </div>
+      <div class="nav-unit" >
+      1
+      </div>
+      <div class="nav-unit" >
+      1
+      </div>
+      <div class="nav-unit" >
+      1
+      </div>
+      </div>
+    #about
+      #whoarewe
+        h3
+          | Who are we?
+        br
+      #about-cards
         
-    
-      
-    #map.demo-card-square.mdl-card.mdl-shadow--2dp
-      .mdl-card__title.mdl-card--expand
-        h2.mdl-card__title-text Centrally located
-      .mdl-card__supporting-text
-        | Located in the heart of the Hartamas/Mont Kiara area,
-        | we are easily accessible from downtown via Jalan Kuching
-        | as well as from PJ via Sprint Highway. 
-      .mdl-card__actions.mdl-card--border
-        a(href='https://www.google.com.my/maps/place/Elite+Global+Language+Learning+Centre/@3.1603074,101.648098,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc48f01d782037:0xc2c66c4e5cadb604!8m2!3d3.160302!4d101.650292?hl=en', target='_blank').mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
-          | View Map
-#requirements
-  #looking-for
-    h3
-      | Who are we looking for?
-      h3
-  #requirements-list
-    ul.demo-list-item.mdl-list
-      li.mdl-list__item
-        span.mdl-list__item-primary-content
-          i.material-icons.mdl-list__item-avatar face
-          span Do you love working with children?
-      li.mdl-list__item
-        span.mdl-list__item-primary-content
-          i.material-icons.mdl-list__item-avatar watch_later
-          span Do you thrive in a fast-paced work environment?
-      li.mdl-list__item
-        span.mdl-list__item-primary-content
-          i.material-icons.mdl-list__item-avatar record_voice_over
-          span
-            | Are you an intermediate to advanced Korean student who would like to expand the breadth of your conversational skills?
-#apply
-  #interested
-    h3 Yes, I'm interested!
-    p#blurb
-      | Your responsibilities will include general administrative tasks
-      | including coordinating pick-up and drop service and fielding calls
-      | from parents. Don't worry, we'll always be on hand for you to ask questions 
-      | and to provide you with the necessary guidance. There won't a dull moment at Elite
-      | and we guarantee you'll learn a wealth of transferrable skills!
-      | The duration of employment in the first instance will be for the holiday programme
-      | for the months of July and August. Thereafter, there is a possibility for staying on 
-      | as a part-time or even a full-time staff.
-      | Simply fill out the 3-page form below and we'll get back to you ASAP!
-    #scroll
-     form#myform(method='post', enctype='multipart/form-data', action='')
-      #container
-        #contact.appcards.demo-card-square.mdl-card.mdl-shadow--2dp
+        #progressive.demo-card-square.mdl-card.mdl-shadow--2dp
           .mdl-card__title.mdl-card--expand
-            h2.mdl-card__title-text Contact details
+            h2.mdl-card__title-text Progressive
           .mdl-card__supporting-text
-            .mdl-textfield.mdl-js-textfield
-              input#firstName.mdl-textfield__input(type='text', required='', name='firstName')
-              label.mdl-textfield__label(for='firstName') First Name
-            .mdl-textfield.mdl-js-textfield
-              input#lastName.mdl-textfield__input(type='text', required='', name = 'lastName')
-              label.mdl-textfield__label(for='lastName') Last Name
-            .mdl-textfield.mdl-js-textfield
-              input#email.mdl-textfield__input(type='text', required='', name = 'email')
-              label.mdl-textfield__label(for='email') E-mail
-            .mdl-textfield.mdl-js-textfield
-              input#phone.mdl-textfield__input(type='text', required='', name = 'phone')
-              label.mdl-textfield__label(for='phone') Phone #
-          .mdl-card__actions.mdl-card--border
-            a.next.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
-              | Next
-        #essay.appcards.demo-card-square.mdl-card.mdl-shadow--2dp.none
+            | Elite Global Language Learning Center was established in 2009 as a premier 
+            | language instruction center for children aged 6 and above. We focus on building
+            | strong foundational writing, speaking and grammar skills that will
+            | prepare our students for life-long independent learning.
+        
+        #fun.demo-card-square.mdl-card.mdl-shadow--2dp
           .mdl-card__title.mdl-card--expand
-            h2.mdl-card__title-text Essay
+            h2.mdl-card__title-text Fun
           .mdl-card__supporting-text
-            | Tell us something about yourself, e.g. your hobbies, or why you're applying to this job. Writing in Korean is not necessary, but we're sure you'd like to show off your skills!
-            .mdl-textfield.mdl-js-textfield
-              textarea#essaytext.mdl-textfield__input(type='text', rows='8', name = 'essaytext')
-              label.mdl-textfield__label(for='essaytext') Start here!
-            //
-              <div class="mdl-textfield mdl-js-textfield" id="essaytext-expanded">
-              <textarea class="mdl-textfield__input" type="text" rows= "3"  ></textarea>
-              <label class="mdl-textfield__label" for="essaytext">Start here!</label>
-              </div>
-          .mdl-card__actions.mdl-card--border
-            a.next.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
-              | Next
-        #resume.appcards.demo-card-square.mdl-card.mdl-shadow--2dp.none
+            | Elite encourages a positive and creative dynamic between students while providing a supportive environment for teachers and a conducive
+            | study environment for students. Students eagerly look forward to attending
+            | their classes and make new friends in the process. 
+            
+        
+          
+        #map.demo-card-square.mdl-card.mdl-shadow--2dp
           .mdl-card__title.mdl-card--expand
-            h2.mdl-card__title-text Resume (optional)
+            h2.mdl-card__title-text Centrally located
           .mdl-card__supporting-text
-            | Please upload your resume, if you have one handy, otherwise don't sweat it. You can bring it along at the interview.
-            #uploadelements
-              #resume_upload_button
-                label.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored
-                  i.material-icons file_upload
-                  input#resumeupload.none(type='file', name='resume')
-                  // .none = display: none
-              #file-input-text-div.mdl-textfield.mdl-js-textfield
-                input#file_input_text.file_input_text.mdl-textfield__input(type='text', disabled='', readonly='')
-                label.mdl-textfield__label(for='file_input_text')
+            | Located in the heart of the Hartamas/Mont Kiara area,
+            | we are easily accessible from downtown via Jalan Kuching
+            | as well as from PJ via Sprint Highway. 
           .mdl-card__actions.mdl-card--border
-            a.next.submit.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
-              | submit
-        #success.appcards.demo-card-square.mdl-card.mdl-shadow--2dp.none
-          h2 Thanks for your application.
-          h3 We'll be in touch ASAP!
+            a(href='https://www.google.com.my/maps/place/Elite+Global+Language+Learning+Centre/@3.1603074,101.648098,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc48f01d782037:0xc2c66c4e5cadb604!8m2!3d3.160302!4d101.650292?hl=en', target='_blank').mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
+              | View Map
+    #requirements
+      #looking-for
+        h3
+          | Who are we looking for?
+          h3
+      #requirements-list
+        ul.demo-list-item.mdl-list
+          li.mdl-list__item
+            span.mdl-list__item-primary-content
+              i.material-icons.mdl-list__item-avatar face
+              span Do you love working with children?
+          li.mdl-list__item
+            span.mdl-list__item-primary-content
+              i.material-icons.mdl-list__item-avatar watch_later
+              span Do you thrive in a fast-paced work environment?
+          li.mdl-list__item
+            span.mdl-list__item-primary-content
+              i.material-icons.mdl-list__item-avatar record_voice_over
+              span
+                | Are you an intermediate to advanced Korean student who would like to expand the breadth of your conversational skills?
+    #apply
+      #interested
+        h3 Yes, I'm interested!
+        p#blurb
+          | Your responsibilities will include general administrative tasks
+          | including coordinating pick-up and drop service and fielding calls
+          | from parents. Don't worry, we'll always be on hand for you to ask questions 
+          | and to provide you with the necessary guidance. There won't a dull moment at Elite
+          | and we guarantee you'll learn a wealth of transferrable skills!
+          | The duration of employment in the first instance will be for the holiday programme
+          | for the months of July and August. Thereafter, there is a possibility for staying on 
+          | as a part-time or even a full-time staff.
+          | Simply fill out the 3-page form below and we'll get back to you ASAP!
+        #scroll
+         form#myform(method='post', enctype='multipart/form-data', action='')
+          #container
+            #contact.appcards.demo-card-square.mdl-card.mdl-shadow--2dp
+              .mdl-card__title.mdl-card--expand
+                h2.mdl-card__title-text Contact details
+              .mdl-card__supporting-text
+                .mdl-textfield.mdl-js-textfield
+                  input#firstName.mdl-textfield__input(type='text', required='', name='firstName')
+                  label.mdl-textfield__label(for='firstName') First Name
+                .mdl-textfield.mdl-js-textfield
+                  input#lastName.mdl-textfield__input(type='text', required='', name = 'lastName')
+                  label.mdl-textfield__label(for='lastName') Last Name
+                .mdl-textfield.mdl-js-textfield
+                  input#email.mdl-textfield__input(type='text', required='', name = 'email')
+                  label.mdl-textfield__label(for='email') E-mail
+                .mdl-textfield.mdl-js-textfield
+                  input#phone.mdl-textfield__input(type='text', required='', name = 'phone')
+                  label.mdl-textfield__label(for='phone') Phone #
+              .mdl-card__actions.mdl-card--border
+                a.next.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
+                  | Next
+            #essay.appcards.demo-card-square.mdl-card.mdl-shadow--2dp.none
+              .mdl-card__title.mdl-card--expand
+                h2.mdl-card__title-text Essay
+              .mdl-card__supporting-text
+                | Tell us something about yourself, e.g. your hobbies, or why you're applying to this job. Writing in Korean is not necessary, but we're sure you'd like to show off your skills!
+                .mdl-textfield.mdl-js-textfield
+                  textarea#essaytext.mdl-textfield__input(type='text', rows='8', name = 'essaytext')
+                  label.mdl-textfield__label(for='essaytext') Start here!
+                //
+                  <div class="mdl-textfield mdl-js-textfield" id="essaytext-expanded">
+                  <textarea class="mdl-textfield__input" type="text" rows= "3"  ></textarea>
+                  <label class="mdl-textfield__label" for="essaytext">Start here!</label>
+                  </div>
+              .mdl-card__actions.mdl-card--border
+                a.next.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
+                  | Next
+            #resume.appcards.demo-card-square.mdl-card.mdl-shadow--2dp.none
+              .mdl-card__title.mdl-card--expand
+                h2.mdl-card__title-text Resume (optional)
+              .mdl-card__supporting-text
+                | Please upload your resume, if you have one handy, otherwise don't sweat it. You can bring it along at the interview.
+                #uploadelements
+                  #resume_upload_button
+                    label.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored
+                      i.material-icons file_upload
+                      input#resumeupload.none(type='file', name='resume')
+                      // .none = display: none
+                  #file-input-text-div.mdl-textfield.mdl-js-textfield
+                    input#file_input_text.file_input_text.mdl-textfield__input(type='text', disabled='', readonly='')
+                    label.mdl-textfield__label(for='file_input_text')
+              .mdl-card__actions.mdl-card--border
+                a.next.submit.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
+                  | submit
+            #success.appcards.demo-card-square.mdl-card.mdl-shadow--2dp.none
+              h2 Thanks for your application.
+              h3 We'll be in touch ASAP!
 footer#footer
-  div
 
   
   

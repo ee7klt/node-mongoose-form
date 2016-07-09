@@ -13,7 +13,14 @@ var submit = document.getElementsByClassName('submit')[0];
 var nexts = document.getElementsByClassName('next');
 var count = 0;
 
+window.onload= function() {
+  window.setTimeout(function() {
+    console.log('loaded')
+    document.body.classList.remove("mdl-progress","mdl-js-progress","mdl-progress__indeterminate")
+    document.body.classList.add("loaded")
+  }, 2000);
 
+}
 //var msg = document.getElementById('status');
 
 // if screen width is at least 600px, mql.matches is true.
