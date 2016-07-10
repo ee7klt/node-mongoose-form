@@ -1,20 +1,38 @@
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,300italic,400italic,500italic,700italic,700);
 
-body.mdl-progress {
-  text-align: center;
-  height: 10px;
+
+
+/* ------------------------ universal styles ------------------------ */
+.none {
+  display: none;
 }
 
-section {
-  opacity: 0;
+.flex {
+  display: flex;
+}
+
+body
+
+section#progress {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+section#content {
+  opacity: 0.5;
     -webkit-transition:opacity .6s;
     -moz-transition:opacity .6s;
     -o-transition:opacity .6s;
     transition: opacity .6s;
 }
 
-.loaded section {
+section#content.loaded {
   opacity: 1;
 }
 
@@ -214,9 +232,7 @@ p#blurb {
 
 
 
-.none {
-  display: none;
-}
+
 
 
 #file-input-text-div {

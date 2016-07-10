@@ -12,6 +12,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var form = require('./routes/form');
 var elite = require('./routes/elite');
+var test = require('./routes/test');
 
 var app = express();
 
@@ -29,7 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/', elite);
-// app.use('/users', users);
+app.use('/test', test);
 // app.use('/form', form);
 // // app.use('/create', form);
 // app.use('/elite', elite);

@@ -11,13 +11,17 @@ var container = document.getElementById('container');
 var myform = document.getElementById('myform');
 var submit = document.getElementsByClassName('submit')[0];
 var nexts = document.getElementsByClassName('next');
+var progress = document.getElementById('progress');
+var content = document.getElementById('content');
 var count = 0;
 
 window.onload= function() {
   window.setTimeout(function() {
     console.log('loaded')
-    document.body.classList.remove("mdl-progress","mdl-js-progress","mdl-progress__indeterminate")
-    document.body.classList.add("loaded")
+    progress.classList.remove('flex')
+    progress.classList.add('none')
+    //document.getElementsByTagName('section')[0].classList.remove('none')
+    content.classList.add('loaded')
   }, 2000);
 
 }

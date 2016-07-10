@@ -1,0 +1,12 @@
+
+
+
+#progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.none {
+  display: none;
+}
